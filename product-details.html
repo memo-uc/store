@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المنتج - متجر الأجهزة الذكية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>متجر الأجهزة الذكية</h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="index.html#products">المنتجات</a></li>
+                <li><a href="index.html#about">من نحن</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="register.html">التسجيل</a></li>
+            </ul>
+            <div class="cart-icon">
+                <a href="#"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-details-section">
+            <div class="breadcrumb">
+                <a href="index.html">الرئيسية</a> / 
+                <a href="index.html#products">المنتجات</a> / 
+                <span id="product-name">هاتف سامسونج جالاكسي S22</span>
+            </div>
+            
+            <div class="product-details-container">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img id="main-product-image" src="images/s22ultra.webp" alt="هاتف سامسونج جالاكسي S22">
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active" data-image="images/phone1.jpg">
+                            <img src="images/s22.jpeg" alt="صورة المنتج 1">
+                        </div>
+                        <div class="thumbnail" data-image="images/phone1-2.jpg">
+                            <img src="images/s22.jpg" alt="صورة المنتج 2">
+                        </div>
+                        <div class="thumbnail" data-image="images/phone1-3.jpg">
+                            <img src="images/ss22.jpg" alt="صورة المنتج 3">
+                        </div>
+                        <div class="thumbnail" data-image="images/phone1-4.jpg">
+                            <img src="images/sss22.jpg" alt="صورة المنتج 4">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-badge">جديد</div>
+                    <h1 id="product-title">هاتف سامسونج جالاكسي S22</h1>
+                    
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(120 تقييم)</span>
+                    </div>
+                    
+                    <div class="product-price">
+                        <span id="product-price">3,999 جنية</span>
+                        <span class="availability in-stock"><i class="fas fa-check-circle"></i> متوفر في المخزون</span>
+                    </div>
+                    
+                    <div class="product-short-description">
+                        <p>هاتف سامسونج جالاكسي S22 الجديد كلياً مع شاشة Dynamic AMOLED 2X بحجم 6.1 بوصة، ومعالج Exynos 2200 ثماني النواة، وكاميرا خلفية ثلاثية بدقة 50+12+10 ميجابكسل، وكاميرا أمامية بدقة 10 ميجابكسل.</p>
+                    </div>
+                    
+                    <div class="product-colors">
+                        <h3>اللون:</h3>
+                        <div class="color-options">
+                            <div class="color-option active" style="background-color: #000000;" data-color="أسود"></div>
+                            <div class="color-option" style="background-color: #FFFFFF;" data-color="أبيض"></div>
+                            <div class="color-option" style="background-color: #7B68EE;" data-color="بنفسجي"></div>
+                            <div class="color-option" style="background-color: #228B22;" data-color="أخضر"></div>
+                        </div>
+                        <span id="selected-color">أسود</span>
+                    </div>
+                    
+                    <div class="product-storage">
+                        <h3>سعة التخزين:</h3>
+                        <div class="storage-options">
+                            <div class="storage-option active" data-storage="128GB">128GB</div>
+                            <div class="storage-option" data-storage="256GB">256GB</div>
+                            <div class="storage-option" data-storage="512GB">512GB</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-quantity">
+                        <h3>الكمية:</h3>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn-secondary buy-now">شراء الآن</button>
+                    </div>
+                    
+                    <div class="product-meta">
+                        <p><strong>SKU:</strong> <span id="product-sku">SM-S901B</span></p>
+                        <p><strong>الفئة:</strong> <a href="#">هواتف ذكية</a></p>
+                        <p><strong>العلامة التجارية:</strong> <a href="#">سامسونج</a></p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="product-details-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">الوصف</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="description">
+                        <h3>وصف المنتج</h3>
+                        <p>استمتع بتجربة استثنائية مع هاتف سامسونج جالاكسي S22 الجديد كلياً، الذي يجمع بين التصميم الأنيق والأداء القوي. يأتي الهاتف بشاشة Dynamic AMOLED 2X بحجم 6.1 بوصة بدقة FHD+ ومعدل تحديث 120 هرتز، مما يوفر تجربة مشاهدة سلسة وألوان نابضة بالحياة.</p>
+                        
+                        <p>يعمل الهاتف بمعالج Exynos 2200 ثماني النواة المتطور، مع ذاكرة وصول عشوائي 8 جيجابايت، مما يضمن أداءً سريعاً وسلساً لجميع التطبيقات والألعاب. كما يتميز بنظام كاميرا متطور يتضمن كاميرا رئيسية بدقة 50 ميجابكسل، وكاميرا فائقة الاتساع بدقة 12 ميجابكسل، وكاميرا مقربة بدقة 10 ميجابكسل، مما يتيح لك التقاط صور احترافية في مختلف الظروف.</p>
+                        
+                        <p>يأتي الهاتف ببطارية بسعة 3700 مللي أمبير تدعم الشحن السريع بقدرة 25 واط والشحن اللاسلكي، مما يضمن استمرارية استخدام الهاتف طوال اليوم. كما يتميز بمقاومة الماء والغبار بتصنيف IP68، مما يوفر حماية إضافية للهاتف.</p>
+                        
+                        <div class="product-features">
+                            <h4>المميزات الرئيسية:</h4>
+                            <ul>
+                                <li>شاشة Dynamic AMOLED 2X بحجم 6.1 بوصة ومعدل تحديث 120 هرتز</li>
+                                <li>معالج Exynos 2200 ثماني النواة</li>
+                                <li>ذاكرة وصول عشوائي 8 جيجابايت</li>
+                                <li>كاميرا خلفية ثلاثية بدقة 50+12+10 ميجابكسل</li>
+                                <li>كاميرا أمامية بدقة 10 ميجابكسل</li>
+                                <li>بطارية 3700 مللي أمبير مع دعم الشحن السريع</li>
+                                <li>مقاومة الماء والغبار بتصنيف IP68</li>
+                                <li>نظام تشغيل Android 12 مع واجهة One UI 4.1</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    >
+                    
+                   
+            <section class="related-products">
+                <h2>منتجات ذات صلة</h2>
+                <div class="products-container">
+                    <div class="product-card">
+                        <div class="product-badge sale">خصم 15%</div>
+                        <img src="images/ip14.jpg" alt="هاتف ذكي">
+                        <div class="product-info">
+                            <h3>آيفون 14 برو ماكس</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(85)</span>
+                            </div>
+                            <p class="product-price"><span class="old-price">5,499 جنية</span> 4,699 جنية</p>
+                            <a href="product-details.html?id=2" class="btn-secondary">عرض التفاصيل</a>
+                            <button class="btn-primary add-to-cart"><i class="fas fa-shopping-cart"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="images/xi13.webp" alt="هاتف ذكي">
+                        <div class="product-info">
+                            <h3>شاومي 13 برو</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span>(38)</span>
+                            </div>
+                            <p class="product-price">2,799 جنية</p>
+                            <a href="product-details.html?id=6" class="btn-secondary">عرض التفاصيل</a>
+                            <button class="btn-primary add-to-cart"><i class="fas fa-shopping-cart"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-badge">جديد</div>
+                        <img src="images/apple watch.jpg" alt="ساعة ذكية">
+                        <div class="product-info">
+                            <h3>ساعة أبل الإصدار 8</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(67)</span>
+                            </div>
+                            <p class="product-price">1,899 جنية</p>
+                            <a href="product-details.html?id=4" class="btn-secondary">عرض التفاصيل</a>
+                            <button class="btn-primary add-to-cart"><i class="fas fa-shopping-cart"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-badge sale">خصم 20%</div>
+                        <img src="images/airpods.jpg" alt="سماعات لاسلكية">
+                        <div class="product-info">
+                            <h3>سماعات آيربودز برو</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(53)</span>
+                            </div>
+                            <p class="product-price"><span class="old-price">999 جنية</span> 799 جنية</p>
+                            <a href="product-details.html?id=5" class="btn-secondary">عرض التفاصيل</a>
+                            <button class="btn-primary add-to-cart"><i class="fas fa-shopping-cart"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>متجر الأجهزة الذكية</h3>
+                <p>وجهتك الأولى للحصول على أحدث الأجهزة الذكية بأفضل الأسعار وأعلى جودة.</p>
+            </div>
+            
+            
+            
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <p><i class="fas fa-map-marker-alt"></i>العنوان: القاهره </p>
+                <p><i class="fas fa-phone"></i>الهاتف: +20123456789</p>
+                <p><i class="fas fa-envelope"></i> البريد الإلكتروني: info@smartdevices.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>تابعنا</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 متجر الأجهزة الذكية. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل - متجر الأجهزة الذكية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>متجر الأجهزة الذكية</h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="index.html#products">المنتجات</a></li>
+                <li><a href="index.html#about">من نحن</a></li>
+                <li><a href="login.html" class="active">تسجيل الدخول</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="register-section">
+            <div class="form-container">
+                <h2>إنشاء حساب جديد</h2>
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="fullname">الاسم الكامل</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                        <span class="error-message" id="fullname-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="error-message" id="phone-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">كلمة المرور</label>
+                        <div class="password-container">
+                            <input type="password" id="password" name="password" required>
+                            <i class="fas fa-eye toggle-password"></i>
+                        </div>
+                        <span class="error-message" id="password-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirm-password">تأكيد كلمة المرور</label>
+                        <div class="password-container">
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                            <i class="fas fa-eye toggle-password"></i>
+                        </div>
+                        <span class="error-message" id="confirm-password-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">العنوان</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                        <span class="error-message" id="address-error"></span>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">أوافق على <a href="#">الشروط والأحكام</a></label>
+                        <span class="error-message" id="terms-error"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">إنشاء حساب</button>
+                </form>
+                
+                <div class="form-footer">
+                    <p>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>متجر الأجهزة الذكية</h3>
+                <p>وجهتك الأولى للحصول على أحدث الأجهزة الذكية بأفضل الأسعار وأعلى جودة.</p>
+            </div>
+            
+            
+            
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <p><i class="fas fa-map-marker-alt"></i>العنوان: القاهره </p>
+                <p><i class="fas fa-phone"></i>الهاتف: +20123456789</p>
+                <p><i class="fas fa-envelope"></i> البريد الإلكتروني: info@smartdevices.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>تابعنا</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 متجر الأجهزة الذكية. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

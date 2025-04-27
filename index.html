@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>متجر الأجهزة الذكية<</h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="#products">المنتجات</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="register.html">التسجيل</a></li>
+            </ul>
+            <div class="cart-icon">
+                <a href="#"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>أحدث الأجهزة الذكية بأفضل الأسعار</h1>
+                <p>اكتشف مجموعتنا الواسعة من الهواتف الذكية، الأجهزة اللوحية، الساعات الذكية والمزيد</p>
+                <a href="#products" class="btn-primary">تسوق الآن</a>
+            </div>
+        </section>
+
+        <!-- قسم المميزات -->
+        <section class="features-section">
+            <div class="feature-card">
+                <i class="fas fa-truck"></i>
+                <h3>شحن مجاني</h3>
+                <p>للطلبات التي تزيد عن 500 جنية</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>ضمان لمدة عام</h3>
+                <p>على جميع المنتجات الأصلية</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-exchange-alt"></i>
+                <h3>استبدال سهل</h3>
+                <p>خلال 14 يوم من الشراء</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset"></i>
+                <h3>دعم فني 24/7</h3>
+                <p>فريق دعم متخصص لمساعدتك</p>
+            </div>
+        </section>
+
+        <!-- قسم المنتجات -->
+        <section id="products" class="products-section">
+            <div class="section-header">
+                <h2>منتجاتنا المميزة</h2>
+                <p>اكتشف أحدث الأجهزة الذكية المتوفرة في متجرنا</p>
+            </div>
+            
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">الكل</button>
+                <button class="filter-btn" data-category="phones">هواتف ذكية</button>
+                <button class="filter-btn" data-category="tablets">أجهزة لوحية</button>
+                <button class="filter-btn" data-category="watches">ساعات ذكية</button>
+                <button class="filter-btn" data-category="accessories">إكسسوارات</button>
+            </div>
+            
+            <div class="products-container">
+                <!-- هواتف ذكية -->
+                <div class="product-card" data-category="phones">
+                    <div class="product-badge">جديد</div>
+                    <img src="/images/P1.jpg" alt="هاتف ذكي">
+                    <div class="product-info">
+                        <h3>هاتف سامسونج جالاكسي S22</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(120)</span>
+                        </div>
+                        <p class="product-price">3,999 جنية</p>
+                        <a href="product-details.html?id=1" class="btn-secondary">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="phones">
+                    <div class="product-badge sale">خصم 15%</div>
+                    <img src="/images/P2.jpg" alt="هاتف ذكي">
+                    <div class="product-info">
+                        <h3>آيفون 14 برو ماكس</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(85)</span>
+                        </div>
+                        <p class="product-price"><span class="old-price">5,499 جنية</span> 4,699 جنية</p>
+                        <a href="product-details.html?id=2" class="btn-secondary">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <!-- أجهزة لوحية -->
+                <div class="product-card" data-category="tablets">
+                    <img src="/images/P3.jpg" alt="جهاز لوحي">
+                    <div class="product-info">
+                        <h3>آيباد برو 12.9 بوصة</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(42)</span>
+                        </div>
+                        <p class="product-price">4,299 جنية</p>
+                        <a href="product-details.html?id=3" class="btn-secondary">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <!-- ساعات ذكية -->
+                <div class="product-card" data-category="watches">
+                    <div class="product-badge">جديد</div>
+                    <img src="/images/P4.jpg" alt="ساعة ذكية">
+                    <div class="product-info">
+                        <h3>ساعة أبل الإصدار 8</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(67)</span>
+                        </div>
+                        <p class="product-price">1,899 جنية</p>
+                        <a href="product-details.html?id=4" class="btn-secondary">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <!-- إكسسوارات -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-badge sale">خصم 20%</div>
+                    <img src="/images/P5.jpg" alt="سماعات لاسلكية">
+                    <div class="product-info">
+                        <h3>سماعات آيربودز برو</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(53)</span>
+                        </div>
+                        <p class="product-price"><span class="old-price">999 جنية</span> 799 جنية</p>
+                        <a href="product-details.html?id=5" class="btn-secondary">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="phones">
+                    <img src="/images/P6.jpg" alt="هاتف ذكي">
+                    <div class="product-info">
+                        <h3>شاومي 13 برو</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>(38)</span>
+                        </div>
+                        <p class="product-price">2,799 جنية</p>
+                        <a href="product-details.html?id=6" class="btn-secondary">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="watches">
+                    <img src="/images/P7.jpg" alt="ساعة ذكية">
+                    <div class="product-info">
+                        <h3>سامسونج جالاكسي ووتش 5</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(29)</span>
+                        </div>
+                        <p class="product-price">1,299 جنية</p>
+                        <a href="product-details.html?id=7" class="btn-secondary">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="accessories">
+                    <img src="/images/P8.jpg" alt="شاحن لاسلكي">
+                    <div class="product-info">
+                        <h3>شاحن لاسلكي سريع</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(45)</span>
+                        </div>
+                        <p class="product-price">199 جنية</p>
+                        <a href="product-details.html?id=8" class="btn-secondary">عرض التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more">
+                <button class="btn-secondary">عرض المزيد من المنتجات</button>
+            </div>
+        </section>
+
+        <!-- قسم من نحن -->
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <h2>من نحن</h2>
+                <p>تعرف على متجر الأجهزة الذكية وقصة نجاحنا</p>
+            </div>
+            
+            <div class="about-container">
+                <div class="about-video">
+                    <video controls poster="images/about-poster.jpg">
+                        <source src="videos/about-us.mp4" type="video/mp4">
+                        متصفحك لا يدعم تشغيل الفيديو.
+                    </video>
+                </div>
+                
+                <div class="about-content">
+                    <h3>قصتنا</h3>
+                    <p>تأسس متجر الأجهزة الذكية في عام 2015 بهدف توفير أحدث التقنيات والأجهزة الذكية للمستهلكين في المملكة العربية السعودية والشرق الأوسط. نحن نؤمن بأن التكنولوجيا يجب أن تكون متاحة للجميع بأسعار معقولة وبجودة عالية.</p>
+                    
+                    <h3>رؤيتنا</h3>
+                    <p>نسعى لأن نكون الوجهة الأولى للمستهلكين عند التفكير في شراء الأجهزة الذكية، من خلال توفير تجربة تسوق فريدة ومنتجات عالية الجودة وخدمة عملاء متميزة.</p>
+                    
+                    <h3>قيمنا</h3>
+                    <div class="values-container">
+                        <div class="value-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>الجودة</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>الابتكار</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>الشفافية</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>رضا العملاء</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-gallery">
+                <h3>صور من متجرنا</h3>
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="/images/Store1.jpeg" alt="صورة المتجر 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/Store2.jpeg" alt="صورة المتجر 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/Store 3.jpeg" alt="صورة المتجر 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>متجر الأجهزة الذكية</h3>
+                <p>وجهتك الأولى للحصول على أحدث الأجهزة الذكية بأفضل الأسعار وأعلى جودة.</p>
+            </div>
+            
+            
+            
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <p><i class="fas fa-map-marker-alt"></i>العنوان: القاهره </p>
+                <p><i class="fas fa-phone"></i>الهاتف: +20123456789</p>
+                <p><i class="fas fa-envelope"></i> البريد الإلكتروني: info@smartdevices.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>تابعنا</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 متجر الأجهزة الذكية. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
